@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h3 {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-capital,
+h2 {
+  font-family: "Jacques Francois", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.font-italic {
+  font-family: "Jacques Francois", serif;
+  font-weight: 400;
+  font-style: italic;
+}
