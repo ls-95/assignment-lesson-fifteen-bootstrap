@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Jacques+Francois&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Jacques+Francois&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,136 +21,152 @@
     <link rel="stylesheet" href="src/styles.css" />
     <title>Bootstrap Playground</title>
   </head>
-  <body class="container-lg">
+  <body class="container-lg border border-2 border-dark my-5 px-5">
     <header>
-      <h1>. Food Menu .</h1>
-      <h2>Fradel and spies Restaurant</h2>
+      <h1 class="text-center text-uppercase text-huge">. Food Menu .</h1>
+      <h2 class="text-center text-uppercase fs-2 mb-5">
+        Fradel and spies Restaurant
+      </h2>
     </header>
     <main>
-      <!--First row-->
-      <div class="row">
-        <!--First column-->
-        <div class="col-md-6">
-          <h3>For the Opening</h3>
+      <!--Grid-->
+      <div style="grid-template-columns: 1fr 1fr" class="d-grid gap-5">
+        <!--First container-->
+        <div class="p-3">
+          <h3 class="text-uppercase fs-2">For the Opening</h3>
           <div class="row">
-            <!--Entree-->
+            <!--Entre-->
             <div class="col-md-10">
-              <p>Chicken Pot Pie Casserole</p>
-              <p>Classic chicken pot pie filling bakes topped with biscuits.</p>
+              <p class="text-uppercase fw-bold">Chicken Pot Pie Casserole</p>
+              <p class="fst-italic">
+                Classic chicken pot pie filling bakes topped with biscuits.
+              </p>
             </div>
-            <p class="col-md-2">$20</p>
+            <p class="col-md-2 text-md-end fw-bold">$20</p>
+
             <!--Entree-->
             <div class="col-md-10">
-              <p>Crunchwrap</p>
-              <p>
+              <p class="text-uppercase fw-bold">Crunchwrap</p>
+              <p class="fst-italic">
                 Simple wraps filled with beef, some vegetables, and a special
                 sauce.
               </p>
             </div>
-            <p class="col-md-2">$25</p>
+            <p class="col-md-2 text-md-end fw-bold">$25</p>
+
             <!--Entree-->
             <div class="col-md-10">
-              <p>Vegan Lasagna</p>
-              <p>Ricotta with a bechamel white sauce topped with tomato.</p>
+              <p class="text-uppercase fw-bold">Vegan Lasagna</p>
+              <p class="fst-italic">
+                Ricotta with a bechamel white sauce topped with tomato.
+              </p>
             </div>
-            <p class="col-md-2">$30</p>
+            <p class="col-md-2 text-md-end fw-bold">$30</p>
+
             <!--Entree-->
             <div class="col-md-10">
-              <p>Shrimps Scampi</p>
-              <p>Use plump, pink shrimp served over a heaping bown of pasta.</p>
+              <p class="text-uppercase fw-bold">Shrimps Scampi</p>
+              <p class="fst-italic">
+                Use plump, pink shrimp served over a heaping bown of pasta.
+              </p>
             </div>
-            <p class="col-md-2">$35</p>
+            <p class="col-md-2 text-md-end fw-bold">$35</p>
           </div>
         </div>
-        <!--Second column-->
-        <div class="col-md-6">
-          <h3>The Mains</h3>
+
+        <!--Second container-->
+        <div class="p-3">
+          <h3 class="text-uppercase fs-2">The Mains</h3>
           <div class="row">
             <!--Main-->
             <div class="col-md-10">
-              <p>Coconut curry salmon</p>
-              <p>The salmon simmers in the milk of coconut and spice.</p>
+              <p class="text-uppercase fw-bold">Coconut curry salmon</p>
+              <p class="fst-italic">
+                The salmon simmers in the milk of coconut and spice.
+              </p>
             </div>
-            <p class="col-md-2">$45</p>
+            <p class="col-md-2 text-md-end fw-bold">$45</p>
+
             <!--Main-->
             <div class="col-md-10">
-              <p>Lemon Butter Chicken Thighs</p>
-              <p>
+              <p class="text-uppercase fw-bold">Lemon Butter Chicken Thighs</p>
+              <p class="fst-italic">
                 Chicken thighs tossed with potatoes, lemons, onion, and herby
                 butter.
               </p>
             </div>
-            <p class="col-md-2">$40</p>
+            <p class="col-md-2 text-md-end fw-bold">$40</p>
+
             <!--Main-->
             <div class="col-md-10">
-              <p>Creamy Chicken Gnocchi</p>
-              <p>
+              <p class="text-uppercase fw-bold">Creamy Chicken Gnocchi</p>
+              <p class="fst-italic">
                 A simple panned chicken in a special gnocchi and white sauce of
                 secrets.
               </p>
             </div>
-            <p class="col-md-2">$50</p>
+            <p class="col-md-2 text-md-end fw-bold">$50</p>
+
             <!--Main-->
             <div class="col-md-10">
-              <p>Garlicky Spaghetti</p>
-              <p>
+              <p class="text-uppercase fw-bold">Garlicky Spaghetti</p>
+              <p class="fst-italic">
                 Spaghetti with garlic, lemon and fresh herbs such as parsley,
                 basil, and chives.
               </p>
             </div>
-            <p class="col-md-2">$35</p>
+            <p class="col-md-2 text-md-end fw-bold">$35</p>
           </div>
         </div>
-      </div>
-      <!--Second row-->
-      <div class="row">
-        <!--First column-->
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="row">
-                <!--Item-->
+
+        <!--Third Container-->
+        <div class="p-3">
+          <h3 class="text-uppercase fs-2">Desserts & Beverage</h3>
+          <div style="grid-template-columns: 1fr 1fr" class="d-grid gap-5">
+            <div>
+              <div class="row fw-bold">
+                <!--Dessert-->
                 <p class="col-md-10">Floating Island</p>
-                <p class="col-md-2">$20</p>
-                <!--Item-->
+                <p class="col-md-2 text-md-end">$20</p>
+
+                <!--Dessert-->
                 <p class="col-md-10">Almond Frangipane</p>
-                <p class="col-md-2">$20</p>
-                <!--Item-->
+                <p class="col-md-2 text-md-end">$20</p>
+
+                <!--Dessert-->
                 <p class="col-md-10">Cornflake Tart</p>
-                <p class="col-md-2">$20</p>
-                <!--Item-->
+                <p class="col-md-2 text-md-end">$20</p>
+
+                <!--Dessert-->
                 <p class="col-md-10">Corn Soup</p>
-                <p class="col-md-2">$20</p>
+                <p class="col-md-2 text-md-end">$20</p>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="row">
+            <div>
+              <div class="row fw-bold">
                 <!--Drink-->
                 <p class="col-md-10">Peach Tea</p>
-                <p class="col-md-2">$15</p>
+                <p class="col-md-2 text-md-end">$15</p>
                 <!--Drink-->
                 <p class="col-md-10">Latte (Ice/Hot)</p>
-                <p class="col-md-2">$15</p>
+                <p class="col-md-2 text-md-end">$15</p>
                 <!--Drink-->
                 <p class="col-md-10">Mango Juice</p>
-                <p class="col-md-2">$15</p>
+                <p class="col-md-2 text-md-end">$15</p>
                 <!--Drink-->
                 <p class="col-md-10">Lychee Mojito</p>
-                <p class="col-md-2">$15</p>
+                <p class="col-md-2 text-md-end">$15</p>
               </div>
             </div>
           </div>
         </div>
-        <!--Second column-->
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-2"><i class="fa-solid fa-utensils"></i></div>
-            <div class="col-md-10">
-              <h2>Open Hour</h2>
-              <p>08:00 AM - 11:00 PM</p>
-              <p>www.reallygreatsite.com</p>
-              <p>123-456-7890</p>
-            </div>
+
+        <div class="p-3">
+          <h3 class="text-uppercase fs-2">Open Hour</h3>
+          <div>
+            <p class="text-uppercase">08:00 AM - 11:00 PM</p>
+            <p>www.reallygreatsite.com</p>
+            <p>123-456-7890</p>
           </div>
         </div>
       </div>
