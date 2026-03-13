@@ -17,196 +17,202 @@
     <link rel="stylesheet" href="src/styles.css" />
     <title>Bootstrap Playground</title>
   </head>
-  <body class="container-lg border border-2 border-dark my-5 px-5">
-    <header>
-      <h1 class="text-center text-uppercase text-huge mb-4">
-        <span class="text-info">.</span> Food Menu
-        <span class="text-info">.</span>
-      </h1>
-      <h2 class="text-center text-uppercase fs-2 mb-5">
-        Fradel and spies Restaurant
-      </h2>
-    </header>
-    <main>
-      <!--Grid-->
-      <div style="grid-template-columns: 1fr 1fr" class="d-grid gap-5">
-        <!--First container-->
-        <div class="p-3 border-end">
-          <h3 class="text-uppercase fs-2">For the Opening</h3>
+  <body>
+    <div
+      class="container-lg border border-2 border-dark my-5 px-5 container-menu"
+    >
+      <header>
+        <h1 class="text-center text-uppercase text-huge mb-4">
+          <span class="text-info">.</span> Food Menu
+          <span class="text-info">.</span>
+        </h1>
+        <h2 class="text-center text-uppercase fs-2 mb-5">
+          Fradel and spies Restaurant
+        </h2>
+      </header>
+      <main>
+        <!--Grid-->
+        <div class="d-grid gap-5 two-col-grid">
+          <!--First container-->
+          <div class="p-3 border-end container-entree">
+            <h3 class="text-uppercase fs-2">For the Opening</h3>
 
-          <!--Entree-->
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="text-uppercase fw-bold mb-0 mt-3">
-                Chicken Pot Pie Casserole
-              </p>
-              <p class="fst-italic">
-                Classic chicken pot pie filling bakes topped with biscuits.
-              </p>
+            <!--Entree-->
+            <div class="d-flex justify-content-between container-food-items">
+              <div>
+                <p class="text-uppercase fw-bold mb-0 mt-3">
+                  Chicken Pot Pie Casserole
+                </p>
+                <p class="fst-italic">
+                  Classic chicken pot pie filling bakes topped with biscuits.
+                </p>
+              </div>
+              <p class="fw-bold d-flex align-items-center price">$20</p>
             </div>
-            <p class="fw-bold d-flex align-items-center">$20</p>
+
+            <!--Entree-->
+            <div class="d-flex justify-content-between container-food-items">
+              <div>
+                <p class="text-uppercase fw-bold mb-0 mt-3">Crunchwrap</p>
+                <p class="fst-italic">
+                  Simple wraps filled with beef, some vegetables, and a special
+                  sauce.
+                </p>
+              </div>
+              <p class="fw-bold d-flex align-items-center price">$25</p>
+            </div>
+
+            <!--Entree-->
+            <div class="d-flex justify-content-between container-food-items">
+              <div>
+                <p class="text-uppercase fw-bold mb-0 mt-3">Vegan Lasagna</p>
+                <p class="fst-italic">
+                  Ricotta with a bechamel white sauce topped with tomato.
+                </p>
+              </div>
+              <p class="fw-bold d-flex align-items-center price">$30</p>
+            </div>
+
+            <!--Entree-->
+            <div class="d-flex justify-content-between container-food-items">
+              <div>
+                <p class="text-uppercase fw-bold mb-0 mt-3">Shrimps Scampi</p>
+                <p class="fst-italic">
+                  Use plump, pink shrimp served over a heaping bown of pasta.
+                </p>
+              </div>
+              <p class="fw-bold d-flex align-items-center price">$35</p>
+            </div>
           </div>
 
-          <!--Entree-->
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="text-uppercase fw-bold mb-0 mt-3">Crunchwrap</p>
-              <p class="fst-italic">
-                Simple wraps filled with beef, some vegetables, and a special
-                sauce.
-              </p>
+          <!--Second container-->
+          <div class="p-3">
+            <h3 class="text-uppercase fs-2">The Mains</h3>
+
+            <!--Main-->
+            <div class="d-flex justify-content-between container-food-items">
+              <div>
+                <p class="text-uppercase fw-bold mb-0 mt-3">
+                  Coconut curry salmon
+                </p>
+                <p class="fst-italic">
+                  The salmon simmers in the milk of coconut and spice.
+                </p>
+              </div>
+              <p class="fw-bold d-flex align-items-center price">$45</p>
             </div>
-            <p class="fw-bold d-flex align-items-center">$25</p>
+
+            <!--Main-->
+            <div class="d-flex justify-content-between container-food-items">
+              <div>
+                <p class="text-uppercase fw-bold mb-0 mt-3">
+                  Lemon Butter Chicken Thighs
+                </p>
+                <p class="fst-italic">
+                  Chicken thighs tossed with potatoes, lemons, onion, and herby
+                  butter.
+                </p>
+              </div>
+              <p class="fw-bold d-flex align-items-center price">$40</p>
+            </div>
+
+            <!--Main-->
+            <div class="d-flex justify-content-between container-food-items">
+              <div>
+                <p class="text-uppercase fw-bold mb-0 mt-3">
+                  Creamy Chicken Gnocchi
+                </p>
+                <p class="fst-italic">
+                  A simple panned chicken in a special gnocchi and white sauce
+                  of secrets.
+                </p>
+              </div>
+              <p class="fw-bold d-flex align-items-center price">$50</p>
+            </div>
+
+            <!--Main-->
+            <div class="d-flex justify-content-between container-food-items">
+              <div>
+                <p class="text-uppercase fw-bold mb-0 mt-3">
+                  Garlicky Spaghetti
+                </p>
+                <p class="fst-italic">
+                  Spaghetti with garlic, lemon and fresh herbs such as parsley,
+                  basil, and chives.
+                </p>
+              </div>
+              <p class="fw-bold d-flex align-items-center price">$35</p>
+            </div>
           </div>
 
-          <!--Entree-->
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="text-uppercase fw-bold mb-0 mt-3">Vegan Lasagna</p>
-              <p class="fst-italic">
-                Ricotta with a bechamel white sauce topped with tomato.
-              </p>
+          <!--Third Container-->
+          <div class="p-3 mb-5 border-end container-dessert">
+            <h3 class="text-uppercase fs-2">Desserts & Beverage</h3>
+            <div class="d-grid gap-5 two-col-grid-dessert">
+              <div>
+                <!--Dessert-->
+                <div class="d-flex justify-content-between fw-bold mt-3">
+                  <p class="col-md-10">Floating Island</p>
+                  <p class="col-md-2 text-md-end">$20</p>
+                </div>
+
+                <!--Dessert-->
+                <div class="d-flex justify-content-between fw-bold mt-3">
+                  <p class="col-md-10">Almond Frangipane</p>
+                  <p class="col-md-2 text-md-end">$20</p>
+                </div>
+
+                <!--Dessert-->
+                <div class="d-flex justify-content-between fw-bold mt-3">
+                  <p class="col-md-10">Cornflake Tart</p>
+                  <p class="col-md-2 text-md-end">$20</p>
+                </div>
+
+                <!--Dessert-->
+                <div class="d-flex justify-content-between fw-bold mt-3">
+                  <p class="col-md-10">Corn Soup</p>
+                  <p class="col-md-2 text-md-end">$20</p>
+                </div>
+              </div>
+              <div>
+                <!--Drink-->
+                <div class="d-flex justify-content-between fw-bold mt-3">
+                  <p class="col-md-10">Peach Tea</p>
+                  <p class="col-md-2 text-md-end">$15</p>
+                </div>
+
+                <!--Drink-->
+                <div class="d-flex justify-content-between fw-bold mt-3">
+                  <p class="col-md-10">Latte (Ice/Hot)</p>
+                  <p class="col-md-2 text-md-end">$15</p>
+                </div>
+
+                <!--Drink-->
+                <div class="d-flex justify-content-between fw-bold mt-3">
+                  <p class="col-md-10">Mango Juice</p>
+                  <p class="col-md-2 text-md-end">$15</p>
+                </div>
+
+                <!--Drink-->
+                <div class="d-flex justify-content-between fw-bold mt-3">
+                  <p class="col-md-10">Lychee Mojito</p>
+                  <p class="col-md-2 text-md-end">$15</p>
+                </div>
+              </div>
             </div>
-            <p class="fw-bold d-flex align-items-center">$30</p>
           </div>
 
-          <!--Entree-->
-          <div class="d-flex justify-content-between">
+          <!--Fourth Container-->
+          <div class="p-3 text-center">
+            <h3 class="text-uppercase fs-2">Open Hour</h3>
             <div>
-              <p class="text-uppercase fw-bold mb-0 mt-3">Shrimps Scampi</p>
-              <p class="fst-italic">
-                Use plump, pink shrimp served over a heaping bown of pasta.
-              </p>
+              <p class="text-uppercase">08:00 AM - 11:00 PM</p>
+              <p>www.reallygreatsite.com</p>
+              <p>123-456-7890</p>
             </div>
-            <p class="fw-bold d-flex align-items-center">$35</p>
           </div>
         </div>
-
-        <!--Second container-->
-        <div class="p-3">
-          <h3 class="text-uppercase fs-2">The Mains</h3>
-
-          <!--Main-->
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="text-uppercase fw-bold mb-0 mt-3">
-                Coconut curry salmon
-              </p>
-              <p class="fst-italic">
-                The salmon simmers in the milk of coconut and spice.
-              </p>
-            </div>
-            <p class="fw-bold d-flex align-items-center">$45</p>
-          </div>
-
-          <!--Main-->
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="text-uppercase fw-bold mb-0 mt-3">
-                Lemon Butter Chicken Thighs
-              </p>
-              <p class="fst-italic">
-                Chicken thighs tossed with potatoes, lemons, onion, and herby
-                butter.
-              </p>
-            </div>
-            <p class="fw-bold d-flex align-items-center">$40</p>
-          </div>
-
-          <!--Main-->
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="text-uppercase fw-bold mb-0 mt-3">
-                Creamy Chicken Gnocchi
-              </p>
-              <p class="fst-italic">
-                A simple panned chicken in a special gnocchi and white sauce of
-                secrets.
-              </p>
-            </div>
-            <p class="fw-bold d-flex align-items-center">$50</p>
-          </div>
-
-          <!--Main-->
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="text-uppercase fw-bold mb-0 mt-3">Garlicky Spaghetti</p>
-              <p class="fst-italic">
-                Spaghetti with garlic, lemon and fresh herbs such as parsley,
-                basil, and chives.
-              </p>
-            </div>
-            <p class="fw-bold d-flex align-items-center">$35</p>
-          </div>
-        </div>
-
-        <!--Third Container-->
-        <div class="p-3 mb-5 border-end">
-          <h3 class="text-uppercase fs-2">Desserts & Beverage</h3>
-          <div style="grid-template-columns: 1fr 1fr" class="d-grid gap-5">
-            <div>
-              <!--Dessert-->
-              <div class="d-flex justify-content-between fw-bold mt-3">
-                <p class="col-md-10">Floating Island</p>
-                <p class="col-md-2 text-md-end">$20</p>
-              </div>
-
-              <!--Dessert-->
-              <div class="d-flex justify-content-between fw-bold mt-3">
-                <p class="col-md-10">Almond Frangipane</p>
-                <p class="col-md-2 text-md-end">$20</p>
-              </div>
-
-              <!--Dessert-->
-              <div class="d-flex justify-content-between fw-bold mt-3">
-                <p class="col-md-10">Cornflake Tart</p>
-                <p class="col-md-2 text-md-end">$20</p>
-              </div>
-
-              <!--Dessert-->
-              <div class="d-flex justify-content-between fw-bold mt-3">
-                <p class="col-md-10">Corn Soup</p>
-                <p class="col-md-2 text-md-end">$20</p>
-              </div>
-            </div>
-            <div>
-              <!--Drink-->
-              <div class="d-flex justify-content-between fw-bold mt-3">
-                <p class="col-md-10">Peach Tea</p>
-                <p class="col-md-2 text-md-end">$15</p>
-              </div>
-
-              <!--Drink-->
-              <div class="d-flex justify-content-between fw-bold mt-3">
-                <p class="col-md-10">Latte (Ice/Hot)</p>
-                <p class="col-md-2 text-md-end">$15</p>
-              </div>
-
-              <!--Drink-->
-              <div class="d-flex justify-content-between fw-bold mt-3">
-                <p class="col-md-10">Mango Juice</p>
-                <p class="col-md-2 text-md-end">$15</p>
-              </div>
-
-              <!--Drink-->
-              <div class="d-flex justify-content-between fw-bold mt-3">
-                <p class="col-md-10">Lychee Mojito</p>
-                <p class="col-md-2 text-md-end">$15</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--Fourth Container-->
-        <div class="p-3 text-center">
-          <h3 class="text-uppercase fs-2">Open Hour</h3>
-          <div>
-            <p class="text-uppercase">08:00 AM - 11:00 PM</p>
-            <p>www.reallygreatsite.com</p>
-            <p>123-456-7890</p>
-          </div>
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
