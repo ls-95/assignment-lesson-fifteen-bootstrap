@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Jacques+Francois&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/a8156b8a54.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -18,28 +22,59 @@
     <title>Bootstrap Playground</title>
   </head>
   <body>
-    <div
-      class="container-lg border border-2 border-dark my-5 px-5 container-menu"
-    >
-      <header>
-        <h1 class="text-center text-uppercase text-huge mb-4">
+    <header>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-sm p-0">
+        <div class="w-100 bg-info-subtle p-2">
+          <div
+            class="container-lg d-flex justify-content-between align-items-center"
+          >
+            <div>
+              <a href="#" class="navbar-brand logo fw-bold fs-3"
+                >Fradel & Spices Restaurant</a
+              >
+            </div>
+            <div class="d-flex flex-fill justify-content-end">
+              <ul class="navbar-nav navbar-links-items">
+                <li class="nav-item">
+                  <a href="#" class="nav-link fw-bold text-dark fs-5">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link fw-bold text-dark fs-5"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--Hero Section-->
+      <div>
+        <h1 class="text-center text-uppercase mb-4 display-1">
           <span class="text-info">.</span> Food Menu
           <span class="text-info">.</span>
         </h1>
         <h2 class="text-center text-uppercase fs-2 mb-5">
-          Fradel and spies Restaurant
+          Fradel & Spices Restaurant
         </h2>
-      </header>
-      <main>
-        <!--Grid-->
-        <div class="d-grid gap-5 two-col-grid">
+      </div>
+    </header>
+
+    <main>
+      <!--Grid-->
+      <div
+        class="container-lg border border-2 border-dark my-5 px-5 container-menu"
+      >
+        <div class="row g-5">
           <!--First container-->
-          <div class="p-3 border-end container-entree">
+          <div class="col-md-6 p-3 border-end container-entree">
             <h3 class="text-uppercase fs-2">For the Opening</h3>
 
             <!--Entree-->
             <div class="d-flex justify-content-between container-food-items">
-              <div>
+              <div class="pe-2">
                 <p class="text-uppercase fw-bold mb-0 mt-3">
                   Chicken Pot Pie Casserole
                 </p>
@@ -52,7 +87,7 @@
 
             <!--Entree-->
             <div class="d-flex justify-content-between container-food-items">
-              <div>
+              <div class="pe-2">
                 <p class="text-uppercase fw-bold mb-0 mt-3">Crunchwrap</p>
                 <p class="fst-italic">
                   Simple wraps filled with beef, some vegetables, and a special
@@ -64,7 +99,7 @@
 
             <!--Entree-->
             <div class="d-flex justify-content-between container-food-items">
-              <div>
+              <div class="pe-2">
                 <p class="text-uppercase fw-bold mb-0 mt-3">Vegan Lasagna</p>
                 <p class="fst-italic">
                   Ricotta with a bechamel white sauce topped with tomato.
@@ -75,7 +110,7 @@
 
             <!--Entree-->
             <div class="d-flex justify-content-between container-food-items">
-              <div>
+              <div class="pe-2">
                 <p class="text-uppercase fw-bold mb-0 mt-3">Shrimps Scampi</p>
                 <p class="fst-italic">
                   Use plump, pink shrimp served over a heaping bown of pasta.
@@ -86,12 +121,12 @@
           </div>
 
           <!--Second container-->
-          <div class="p-3">
+          <div class="col-md-6 p-3">
             <h3 class="text-uppercase fs-2">The Mains</h3>
 
             <!--Main-->
             <div class="d-flex justify-content-between container-food-items">
-              <div>
+              <div class="pe-2">
                 <p class="text-uppercase fw-bold mb-0 mt-3">
                   Coconut curry salmon
                 </p>
@@ -104,7 +139,7 @@
 
             <!--Main-->
             <div class="d-flex justify-content-between container-food-items">
-              <div>
+              <div class="pe-2">
                 <p class="text-uppercase fw-bold mb-0 mt-3">
                   Lemon Butter Chicken Thighs
                 </p>
@@ -118,7 +153,7 @@
 
             <!--Main-->
             <div class="d-flex justify-content-between container-food-items">
-              <div>
+              <div class="pe-2">
                 <p class="text-uppercase fw-bold mb-0 mt-3">
                   Creamy Chicken Gnocchi
                 </p>
@@ -132,7 +167,7 @@
 
             <!--Main-->
             <div class="d-flex justify-content-between container-food-items">
-              <div>
+              <div class="pe-2">
                 <p class="text-uppercase fw-bold mb-0 mt-3">
                   Garlicky Spaghetti
                 </p>
@@ -146,10 +181,10 @@
           </div>
 
           <!--Third Container-->
-          <div class="p-3 mb-5 border-end container-dessert">
+          <div class="col-md-6 p-3 mb-5 border-end container-dessert">
             <h3 class="text-uppercase fs-2">Desserts & Beverage</h3>
-            <div class="d-grid gap-5 two-col-grid-dessert">
-              <div>
+            <div class="d-flex justify-content-between flex-wrap gap-3">
+              <div class="flex-fill">
                 <!--Dessert-->
                 <div class="d-flex justify-content-between fw-bold mt-3">
                   <p class="col-md-10">Floating Island</p>
@@ -174,7 +209,7 @@
                   <p class="col-md-2 text-md-end">$20</p>
                 </div>
               </div>
-              <div>
+              <div class="flex-fill">
                 <!--Drink-->
                 <div class="d-flex justify-content-between fw-bold mt-3">
                   <p class="col-md-10">Peach Tea</p>
@@ -203,16 +238,42 @@
           </div>
 
           <!--Fourth Container-->
-          <div class="p-3 text-center">
+          <div class="col-md-6 p-3 text-center">
             <h3 class="text-uppercase fs-2">Open Hour</h3>
-            <div>
-              <p class="text-uppercase">08:00 AM - 11:00 PM</p>
-              <p>www.reallygreatsite.com</p>
-              <p>123-456-7890</p>
+            <div
+              class="bg-info-subtle rounded-circle d-flex flex-column align-items-center justify-content-center py-4 px-5"
+            >
+              <p class="text-uppercase fw-bold fs-4 mb-1">
+                08:00 AM - 11:00 PM
+              </p>
+              <p class="fw-bold fs-4 mb-1">www.reallygreatsite.com</p>
+              <p class="fw-bold fs-4 mb-0">123-456-7890</p>
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
+
+    <footer class="w-100 bg-info-subtle p-4" id="contact">
+      <div class="container-lg text-center">
+        <p class="logo fw-bold fs-2">
+          <a href="#" class="text-decoration-none text-reset"
+            >Fradel & Spices Restaurant</a
+          >
+        </p>
+        <p class="fs-5 mb-4">
+          <a
+            href="mailto:hello@reallygreatsite.com"
+            class="text-decoration-none text-reset"
+            ><i class="fa-solid fa-envelope"></i> www.reallygreatsite.com</a
+          >
+        </p>
+        <p class="fs-5 mb-0">
+          <a href="tel:1234567890" class="text-decoration-none text-reset"
+            ><i class="fa-solid fa-phone"></i> 123-456-7890</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
